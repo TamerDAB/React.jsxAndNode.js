@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link href="../css/style.css" rel="stylesheet">
+	<script defer src="../js/form-ajax.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<h1>Hello people!</h1>
+
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="./form-submit.html">Form Submit</a></li>
+				<li><a href="./form-ajax.html">Form Ajax</a></li>
+				<li><a href="./various.html">Various</a></li>
+			</ul>
+
+		</nav>
+	</header>
+
+	<!-- ****************************** -->
+	<section>
+		<h2>Personal Data</h2>
+		<p>Enter your details. Request will be sent by Form and saved in the data base. No JS code is needed.</p>
+
+		<!-- When you do form.submit(); the form information is sent to the webserver.
+		
+		The WebServer will do whatever its supposed to do and return a brand new webpage to the client(usually the same page
+		with something changed).
+		
+		So, there is no way you can "catch" the return of a form.submit() action. -->
+
+		<form  class="form-ajax" >
+
+			<input type="text" id="firstname" name="firstname" placeholder="first name" />
+
+
+			<input type="text" id="lastname" name="lastname" placeholder="last name" />
+
+			<fieldset>
+				<legend>Address</legend>
+				<div>
+					<label for="street">Street</label>
+					<input type="text" id="street" name="street" />
+				</div>
+				<div>
+					<label for="city">City</label>
+					<input type="text" id="city" name="city" />
+				</div>
+			</fieldset>
+
+
+			<input type="submit" value="Submit" />
+
+			<p class="message"></p>
+
+		</form>
+	</section>
+
+
+</body>
+
+</html>

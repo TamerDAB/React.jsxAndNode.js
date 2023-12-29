@@ -1,0 +1,33 @@
+/* home.module.css */
+
+.home {
+  background-image: url(../../images/background11.jpg);
+  position: relative;
+  min-height: 80vh;
+  min-width: 100%;
+  background-size: cover;
+
+}
+
+.title {
+  color: rgba(46, 46, 46, 0.483);
+  text-shadow: -1px 0 rgb(121, 89, 89), 0 1px black, 1px 0 rgb(255, 0, 0),
+    0 -1px black;
+  font-family: serif;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-right: 40px;
+  margin-left: 20px;
+  background-color: #ffffff28;
+  border-radius: 0.2em;
+  border-style: double;
+}

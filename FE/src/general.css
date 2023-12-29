@@ -1,0 +1,84 @@
+
+
+/* normalize */
+@import-normalize; 
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: rgb(128, 128, 128);
+  color: whitesmoke;
+}
+
+body {
+  line-height: 1.1;
+  font-size: 1.2 rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+header {
+  /* border: 2px solid red; */
+}
+
+footer {
+  background-color: gray;
+
+}
+
+
+#root {
+  border: 10px solid gray;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: auto; /* Use auto width to allow buttons to expand based on content */
+  margin: 0.5%;
+  padding: 8px 16px; /* Adjust the padding as needed */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid whitesmoke;
+  max-width: 200px; /* Set a max-width to prevent text overflow */
+}
+
+
+button:hover {
+  background-color: orange;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: yellow;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  background-color:black;
+
+}

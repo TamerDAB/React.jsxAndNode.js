@@ -1,0 +1,12 @@
+
+
+
+.section {
+  border: 3px solid red;
+}
+
+.x {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}

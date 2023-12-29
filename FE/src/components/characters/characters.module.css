@@ -1,0 +1,33 @@
+/* login.module.css */
+
+.characters {
+  background-image: url(../../images/backgroundchar2.jpg);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  min-width: 100%;
+}
+
+.characters table {
+  color: white;
+  text-align: center;
+  border: ridge 10px rgba(51, 45, 45, 0.567);
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+.characters td {
+  padding: 5px;
+  border: solid 3px rgba(72, 56, 56, 0.499);
+}
+
+.characters th {
+  padding: 5px;
+  border: solid 3px rgba(255, 255, 255, 0.557);
+}
+
+

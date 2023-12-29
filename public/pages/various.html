@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link href="../css/style.css" rel="stylesheet">
+	<script defer src="../js/various.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<h1>Hello people!</h1>
+
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="./form-submit.html">Form Submit</a></li>
+				<li><a href="./form-ajax.html">Form Ajax</a></li>
+				<li><a href="./various.html">Various</a></li>
+			</ul>
+
+		</nav>
+	</header>
+
+	<!-- ****************************** -->
+	<section>
+		<h2>
+			Person Selection
+		</h2>
+		<p>Show person data by ID. Request will be sent by JSON</p>
+		<div>
+			<label for="id-select">Person ID</label>
+			<input type="text" id="id-select" name="id" />
+		</div>
+		<p class="person-selected"></p>
+
+	</section>
+
+
+	<!-- ****************************** -->
+	<section>
+		<h2>
+			Person Delete
+		</h2>
+		<p>Will be removed from the database with all its relations (in DB must to be defined by CASCADE). Request will be
+			sent by JSON</p>
+		<div>
+			<label for="id-delete">Person ID</label>
+			<input type="text" id="id-delete" name="id" />
+		</div>
+		<p class="person-deleted"></p>
+	</section>
+
+	<!-- ****************************** -->
+	<section>
+		<h2>
+			Person Selection byCity
+		</h2>
+		<p>All people living in the selected city will be shown.</p>
+		<select name="city" id="city-select">
+			<option value="">Please select city</option>
+			<option>Haifa</option>
+			<option>Tel-Aviv</option>
+		</select>
+
+		<ul class="person-list"></ul>
+	</section>
+</body>
+
+</html>
